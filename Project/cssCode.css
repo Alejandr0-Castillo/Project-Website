@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F0F8FF;
+    color: #333;
+}
+
+header {
+    background-color: #4a1f83;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+h1, h2 {
+    color: #4a1f83;
+}
+
+.servicio {
+    position: relative;
+    overflow: hidden;
+    background-color: white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    height: 400px; /* Ajusta esta altura según tus necesidades */
+}
+
+.servicio-contenido, .servicio-imagenes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 3s ease;
+}
+
+.servicio-imagenes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    opacity: 0;
+}
+
+.servicio-imagen {
+    max-width: 30%;
+    max-height: 80%;
+    object-fit: cover;
+}
+
+#alojamiento-servicio:hover .servicio-contenido {
+    opacity: 0;
+}
+
+#alojamiento-servicio:hover .servicio-imagenes {
+    opacity: 1;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+}
+
+input, select, textarea {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.servicio-imagen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

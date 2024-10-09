@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aventura Extrema - Turismo de Naturaleza</title>
+    <link rel="stylesheet" href="cssCode.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#registro">Registro</a></li>
+                <li><a href="#reservas">Reservas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <h1>Aventura Extrema con el juancito</h1>
+            <p>Descubre la naturaleza con nuestras experiencias únicas con nico el crazy</p>
+        </section>
+
+        <section id="servicios">
+            <h2>Nuestros Servicios</h2>
+            <div class="servicio">
+                <h3>Excursiones</h3>
+                <p>Caminar por montañas, visitar ríos y más.</p>
+            </div>
+            <div class="servicio">
+                <h3>Comidas</h3>
+                <p>Almuerzos y cenas tradicionales después de las excursiones.</p>
+            </div>
+            <div class="servicio" id="alojamiento-servicio">
+                <div class="servicio-contenido">
+                    <h3>Alojamientos</h3>
+                    <p>Dormir en cabañas cercanas a la naturaleza.</p>
+                </div>
+                <div class="servicio-imagenes">
+                    <img src="Alojamiento.png" alt="Alojamiento 1" class="servicio-imagen">
+                    <img src="Alojamiento2.png" alt="Alojamiento 2" class="servicio-imagen">
+                    <img src="Alojamiento3.png" alt="Alojamiento 3" class="servicio-imagen">
+                </div>
+            </div>
+        </section>
+
+        <section id="registro">
+            <h2>Registro de Usuario</h2>
+            <form id="registroForm" action="registrar_usuario.php" method="POST">
+                <input type="text" placeholder="Nombre" required>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Contraseña" required>
+                <button type="submit">Registrarse</button>
+            </form>
+        </section>
+
+        <section id="reservas">
+            <h2>Hacer una Reserva</h2>
+            <form id="reservaForm" action="hacer_reserva.php" method="POST">
+                <select id="tipoServicio" required>
+                    <option value="">Seleccione un servicio</option>
+                    <option value="excursion">Excursión</option>
+                    <option value="comida">Comida</option>
+                    <option value="alojamiento">Alojamiento</option>
+                </select>
+                <input type="date" id="fechaReserva" required>
+                <button type="submit">Reservar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Aventura Extrema. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="jsCode.js"></script>
+</body>
+</html>
